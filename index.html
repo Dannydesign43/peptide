@@ -10,6 +10,25 @@
 
   gtag('config', 'G-6163HHHK72');
 </script>
+<!-- Event snippet for Purchase conversion -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18235710145/UNRWCP2btL4cEMG1u_dD',
+      'value': 1.0,
+      'currency': 'AUD',
+      'transaction_id': '',
+      'event_callback': callback
+      // 'new_customer': true /* calculate dynamically, populate with true/false */,
+  });
+  return false;
+}
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gen Ex Peptides — Research Standards &amp; Compliance</title>
@@ -216,7 +235,7 @@
       <a href="#standards">Standards</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="header-cta" href="https://genexpeptides.com.au" target="_blank" rel="noopener">Visit Site →</a>
+    <a class="header-cta" href="https://genexpeptides.com.au" target="_blank" rel="noopener" onclick="gtag_report_conversion()">Visit Site →</a>
   </div>
 </header>
 
@@ -227,7 +246,7 @@
       <h1>Where Australian testing<br>meets <em>documented proof</em></h1>
       <p class="lede">Gen Ex Peptides is a research compound supplier built on a single principle: every batch we list is tested on Australian soil before it reaches a researcher — not because it's required, but because it's the only way to remove uncertainty from the work.</p>
       <div class="hero-actions">
-        <a class="btn-solid" href="https://genexpeptides.com.au" target="_blank" rel="noopener">Visit the Website</a>
+        <a class="btn-solid" href="https://genexpeptides.com.au" target="_blank" rel="noopener" onclick="gtag_report_conversion()">Visit the Website</a>
         <a class="btn-line" href="https://genexpeptides.com.au/index.php/our-testing/" target="_blank" rel="noopener">View Our Testing</a>
       </div>
     </div>
@@ -389,7 +408,7 @@
   <div class="wrap">
     <h2>Ready to see our <em>testing standards</em> in action?</h2>
     <p>Purity reports, testing information, and the complete peptide catalog are available on the Gen Ex Peptides website.</p>
-    <a class="btn-solid" style="background:var(--ink); color:var(--paper);" href="https://genexpeptides.com.au" target="_blank" rel="noopener">Visit genexpeptides.com.au →</a>
+    <a class="btn-solid" style="background:var(--ink); color:var(--paper);" href="https://genexpeptides.com.au" target="_blank" rel="noopener" onclick="gtag_report_conversion()">Visit genexpeptides.com.au →</a>
   </div>
 </section>
 
